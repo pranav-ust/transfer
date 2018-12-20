@@ -1,0 +1,18 @@
+data = open("data.txt", "r+")
+user = open("user.txt", "w+")
+app = open("app.txt", "w+")
+l1 = open("l1.txt", "w+")
+l2 = open("l2.txt", "w+")
+for line in data:
+	line = line.rstrip()
+	arr = line.split(",")
+	user.write(arr[0] + "\n")
+	app.write(arr[1] + "\n")
+	l1.write(arr[2] + "\n")
+	l2.write(arr[3] + "\n")
+
+user.close()
+app.close()
+l1.close()
+l2.close()
+data.close()
