@@ -1,7 +1,7 @@
 import json
 
 filename = open("training", "r+")
-aids = open("aids.txt", "w+")
+aids = open("aid.txt", "w+")
 
 user = ""
 aid = set()
